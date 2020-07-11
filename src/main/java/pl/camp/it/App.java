@@ -9,16 +9,31 @@ import pl.camp.it.model.Customer;
 
 
 public class App {
-    public static void main(String[] args) {
-        System.out.println("Hibernate !!!");
 
-        SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
+    public static SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
+
+    public static void main(String[] args) {
+
 
         Customer customer = new Customer();
         //customer.setId(10);
         customer.setName("Mateusz");
         customer.setSurname("Berenda");
         customer.setPesel(6185454);
+
+        saveCustomerToDatabase(customer);
+
+        Customer customer2 = new Customer();
+
+        customer2.setName("MateuszMateusz");
+        customer2.setSurname("BerendaBerenda");
+        customer2.setPesel(6184324);
+
+        saveCustomerToDatabase(customer2);
+
+    }
+
+    public static void saveCustomerToDatabase(Customer customer){
 
         Session session = sessionFactory.openSession();
         Transaction tx = null;
