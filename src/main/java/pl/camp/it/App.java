@@ -6,7 +6,9 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 import pl.camp.it.model.Customer;
+import org.hibernate.query.Query;
 
+import java.util.List;
 
 public class App {
 
@@ -31,6 +33,17 @@ public class App {
 
         saveCustomerToDatabase(customer2);
 
+        System.out.println(customer2);
+
+        Customer customer3 = new Customer();
+        customer3.setId(2);
+        delateCustomer(customer3);
+
+        System.out.println(getCustomerById(1));
+
+        System.out.println(getAllCastomer());
+
+
     }
 
     public static void saveCustomerToDatabase(Customer customer){
@@ -49,5 +62,31 @@ public class App {
             session.close();
         }
 
+    }
+    public static void delateCustomer(Customer customer){
+        Session session = sessionFactory.openSession();
+        Transaction tx = null;
+        try{
+            tx = session.beginTransaction();
+            session.delete(customer);
+            tx.commit();
+        }catch (Exception e){
+            if (tx != null){
+                tx.rollback();
+            }
+        }finally {
+            session.close();
+        }
+    }
+    public static Customer getCustomerById(int id){
+        Session session = sessionFactory.openSession();
+        Query <Customer> query = session.createQuery("FROM pl.camp.it.model.Customer where id = " + id);
+        Customer customer = query.getSingleResult();
+        return customer;
+    }
+    public static List<Customer> getAllCastomer(){
+        Session session = sessionFactory.openSession();
+        Query<Customer> query =session.createQuery("FROM pl.camp.it.model.Customer");
+        return query.getResultList();
     }
 }
