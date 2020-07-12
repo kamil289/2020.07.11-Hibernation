@@ -17,5 +17,8 @@
         <property name="hbm2ddl.auto">create</property>
 
         <mapping class="pl.camp.it.model.Customer"/>
+        <mapping class="pl.camp.it.model.Addres"/>
+        <mapping class="pl.camp.it.model.Invoice"/>
+        <mapping class="pl.camp.it.model.Product"/>
     </session-factory>
 </hibernate-configuration>

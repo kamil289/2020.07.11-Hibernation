@@ -1,2 +1,5 @@
-pl/camp/it/App.class
+pl/camp/it/model/Product.class
 pl/camp/it/model/Customer.class
+pl/camp/it/model/Addres.class
+pl/camp/it/model/Invoice.class
+pl/camp/it/App.class
