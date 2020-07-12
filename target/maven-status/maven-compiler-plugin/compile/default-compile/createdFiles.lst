@@ -1,5 +1,14 @@
-pl/camp/it/model/Product.class
+pl/camp/it/services/IRandomDataService.class
 pl/camp/it/model/Customer.class
+pl/camp/it/App2.class
+pl/camp/it/DAO/CastomerDAO.class
+pl/camp/it/services/CustomerService.class
+pl/camp/it/services/RandomDataService.class
+pl/camp/it/model/Product.class
+pl/camp/it/gui/GUI.class
 pl/camp/it/model/Addres.class
-pl/camp/it/model/Invoice.class
 pl/camp/it/App.class
+pl/camp/it/services/iCustomerService.class
+pl/camp/it/model/Invoice.class
+pl/camp/it/DAO/ICustomerDAO.class
+pl/camp/it/DAO/ProductDAO.class

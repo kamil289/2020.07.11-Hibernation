@@ -1,5 +1,14 @@
 /home/kamil/Moje pliki/Java/Moje_Z_kursu/hibernate/hibernation/src/main/java/pl/camp/it/model/Addres.java
-/home/kamil/Moje pliki/Java/Moje_Z_kursu/hibernate/hibernation/src/main/java/pl/camp/it/model/Product.java
-/home/kamil/Moje pliki/Java/Moje_Z_kursu/hibernate/hibernation/src/main/java/pl/camp/it/model/Customer.java
+/home/kamil/Moje pliki/Java/Moje_Z_kursu/hibernate/hibernation/src/main/java/pl/camp/it/services/CustomerService.java
+/home/kamil/Moje pliki/Java/Moje_Z_kursu/hibernate/hibernation/src/main/java/pl/camp/it/DAO/CastomerDAO.java
+/home/kamil/Moje pliki/Java/Moje_Z_kursu/hibernate/hibernation/src/main/java/pl/camp/it/gui/GUI.java
 /home/kamil/Moje pliki/Java/Moje_Z_kursu/hibernate/hibernation/src/main/java/pl/camp/it/App.java
+/home/kamil/Moje pliki/Java/Moje_Z_kursu/hibernate/hibernation/src/main/java/pl/camp/it/App2.java
+/home/kamil/Moje pliki/Java/Moje_Z_kursu/hibernate/hibernation/src/main/java/pl/camp/it/model/Product.java
+/home/kamil/Moje pliki/Java/Moje_Z_kursu/hibernate/hibernation/src/main/java/pl/camp/it/DAO/ProductDAO.java
+/home/kamil/Moje pliki/Java/Moje_Z_kursu/hibernate/hibernation/src/main/java/pl/camp/it/services/RandomDataService.java
+/home/kamil/Moje pliki/Java/Moje_Z_kursu/hibernate/hibernation/src/main/java/pl/camp/it/model/Customer.java
+/home/kamil/Moje pliki/Java/Moje_Z_kursu/hibernate/hibernation/src/main/java/pl/camp/it/services/iCustomerService.java
 /home/kamil/Moje pliki/Java/Moje_Z_kursu/hibernate/hibernation/src/main/java/pl/camp/it/model/Invoice.java
+/home/kamil/Moje pliki/Java/Moje_Z_kursu/hibernate/hibernation/src/main/java/pl/camp/it/services/IRandomDataService.java
+/home/kamil/Moje pliki/Java/Moje_Z_kursu/hibernate/hibernation/src/main/java/pl/camp/it/DAO/ICustomerDAO.java
